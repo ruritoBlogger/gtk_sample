@@ -3,4 +3,5 @@
 .python-version
 
 camera/pictures/
+camera/__pycache__/
 
