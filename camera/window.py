@@ -15,8 +15,9 @@ class MyWindow(Gtk.Window):
         Gtk.Window.__init__(self, title="show picture")
       
         # 画面のレイアウトを整える
-        grid = Gtk.Grid()
+        grid = Gtk.Grid(column_spacing=20, row_spacing=10)
         self.add(grid)
+        self.set_border_width(10)
 
         # 画像名を入力する欄の設定
         input_box = Gtk.Box(spacing=0)

@@ -4,7 +4,7 @@ import os
 from window import MyWindow
 
 gi.require_version("Gtk", "3.0")
-from gi.repository import Gtk, GdkPixbuf
+from gi.repository import Gtk, GdkPixbuf, Gdk
 
 def main():
     """
@@ -12,7 +12,9 @@ def main():
     """
 
     Gtk.Settings.get_default().set_property("gtk-icon-theme-name", "Numix")
-    Gtk.Settings.get_default().set_property("gtk-theme-name", "win32")
+    Gtk.Settings.get_default().set_property("gtk-theme-name", "Mojave-light")
+    #Gtk.Settings.get_default().set_property("gtk-theme-name", "Windows-10-Dark")
+    #Gtk.Settings.get_default().set_property("gtk-theme-name", "win32")
 
     win = MyWindow()
     win.connect("destroy",Gtk.main_quit)
